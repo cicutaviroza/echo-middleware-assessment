@@ -10,9 +10,10 @@ Secondly, build a middleware, which checks HTTP header `User-Role` presents and 
 
 # Run
 
-``go run github.com/cicutaviroza/echo-middleware-assessment/cmd/middleware``
+```bash
+go run github.com/cicutaviroza/echo-middleware-assessment/cmd/middleware
 
 # Test
 
-``curl --location --request GET '127.0.0.1:8080/status' \
---header 'User-Role: admin'``
+curl --location --request GET '127.0.0.1:8080/status' \
+--header 'User-Role: admin'
