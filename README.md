@@ -12,8 +12,11 @@ Secondly, build a middleware, which checks HTTP header `User-Role` presents and 
 
 ```bash
 go run github.com/cicutaviroza/echo-middleware-assessment/cmd/middleware
+```
 
 # Test
 
+```bash
 curl --location --request GET '127.0.0.1:8080/status' \
 --header 'User-Role: admin'
+```
